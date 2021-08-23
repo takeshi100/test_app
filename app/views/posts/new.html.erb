@@ -1,0 +1,10 @@
+<div class="col-md-4 offset-md-4" >
+    <h2>Post new</h2>
+    <%= form_with model: @post do |f| %>  
+        <div class="form-group" >
+            <label>Content</label>
+            <%= f.text_area :content, class: 'form-control' %>
+            <%= f.submit "投稿", class: "btn btn-primary" %>    
+        </div>
+    <% end %>
+</div>
